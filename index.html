@@ -1,410 +1,444 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <!-- Core stylesheet -->
-    <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
-    <!-- <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-    <!-- End stylesheet -->
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <title>Nhớ sửa title nhé</title>
-  </head>
+  <!-- Core stylesheet -->
+  <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
+  <!-- <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <!-- End stylesheet -->
 
-  <body>
-    <!-- Document Warpper -->
-    <div id="warpper" class="clearfix">
-      <!-- Top Nav -->
-      <div id="topbar" class="topbar fixed-top clearfix nav-down">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
-          <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
-          <div class="block-right">
-            <a href="#box_comment" class="button-comments count_comment" data-target="">
-              <i class="fas fa-comment"></i>
-              <span class="counter">Bình luận</span>
-            </a>
-            <ul class="list-inline social">
-              <li>
-                <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
-            <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-              <div class="search">
-                <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
-                <span class="search-btn">
-                  <button type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- End Top Nav -->
-      <!-- Menu -->
-      <div class="mask-content"></div>
-      <div id="menu-box" class="menu-box" tabindex="5000">
-        <div class="box_width_common">
-          <div class="block_scoll_menu">
-            <ul class="list_item_panel">
-              <li>
-                <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
-              </li>
-              <li class="active">
-                <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
-              </li>
-              <li>
-                <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
-              </li>
-              <li>
-                <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
-              </li>
-              <li class="end">
-                <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
-              </li>
-            </ul>
-            <div class="coppy_right_left width_common">
-              <i class="ic ic-caret-2-down"></i>
-              <div class="txt_coppy_right">
-                <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
-                <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
-              </div>
-              <div class="txt_lienhe">
-                Hotline: <br />
-                <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
-                <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
-              </div>
+  <title>Nhớ sửa title nhé</title>
+
+</head>
+
+<body>
+  <!-- Document Warpper -->
+  <div id="warpper" class="clearfix">
+    <!-- Top Nav -->
+    <div id="topbar" class="topbar fixed-top clearfix nav-down">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
+        <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
+        <div class="block-right">
+          <a href="#box_comment" class="button-comments count_comment" data-target="">
+            <i class="fas fa-comment"></i>
+            <span class="counter">Bình luận</span>
+          </a>
+          <ul class="list-inline social">
+            <li>
+              <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+          <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
+            <div class="search">
+              <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
+              <span class="search-btn">
+                <button type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </span>
             </div>
-          </div>
-        </div>
-        <div id="ascrail2000" class="nicescroll-rails">
-          <div class="vne-hr1"></div>
-        </div>
-        <div id="ascrail2000-hr" class="nicescroll-rails">
-          <div class="vne-hr2"></div>
+          </form>
         </div>
       </div>
-      <!-- End Menu -->
-      <!-- Main Content -->
-      <div class="section-content clearfix">
-        <div class="wrapper-content">
-          <div id="overlay"></div>
-          <div class="my_container">
-            <div class="bg-container">
-              <div class="section-1">
-                <div class="section-1-1">
-                  <div class="group_image group_img_1">
-                    <img loading="lazy" class="eff-screen" src="assets/images/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
-                    <img loading="lazy" src="assets/images/group_1_2.png" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="400" alt="" />
-                    <img src="assets/images/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
-                  </div>
-                  <div class="group_image group_img_2">
-                    <img loading="lazy" class="eff-screen" src="assets/images/group_2_1.png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1000" />
-                    <img loading="lazy" src="assets/images/group_2_2.png" data-aos="flip-right" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1300" alt="" />
-                    <img src="assets/images/group_2_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="1900" />
-                  </div>
-                  <img loading="lazy" src="assets/images/img-1.png" alt="" class="img img-1" />
-                  <p class="text_title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="300">
-                    Hùng (29 tuổi, quê Ninh Bình), nhà sáng tạo nội dung số,<br />
-                    chốt mua căn hộ studio tại một khu đô thị tại Gia Lâm chỉ<br />
-                    sau vài ngày.
-                  </p>
-                  <p class="line" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">------------------------------------------------------------------------------------</p>
-                </div>
-                <div class="section-1-2 content-container">
-                  <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Anh cho biết ban đầu không có dự định mua nhà, bởi với khoản tiết kiệm hiện có nếu không vay mượn gia đình và người thân, anh khó có thể mua đứt căn hộ.
-                    </p>
-                    <p class="text_content t-content">
-                      Giữa năm ngoái, anh chứng kiến không ít bạn bè mình phải “gồng gánh”, vay mượn trả lãi ngân hàng khi lãi suất thả nổi, có thời điểm đến 12,5%. “Bản tính tự lập, tôi không muốn
-                      vay mượn nên không nghĩ nhiều đến việc mua nhà”, anh Hùng nói.
-                    </p>
-                    <p class="text_content t-content">
-                      Kế hoạch của 9x thay đổi vào đầu năm nay, khi anh biết đến một dự án chung cư tại Hà Nội áp dụng chính sách lãi suất cố định trong thời gian lên tới 15 năm, ân hạn gốc 24 tháng.
-                      Với chính sách này, anh biết được khoản tiền mình phải chi trả hàng tháng, từ đó phân bổ ngân sách để chi trả. Nhìn lại bài toán tài chính cá nhân, với mức vốn tự có 800 triệu
-                      đồng và thu nhập trung bình 50 triệu đồng mỗi tháng, anh đủ khả năng trả khoản tiền lãi và gốc hàng tháng mà không cần vay mượn người nhà.
-                    </p>
-                  </div>
-                </div>
-                <div class="section-1-3 content-container" data-aos="flip-up" data-aos-duration="1000" data-aos-offset="300">
-                  <img loading="lazy" src="assets/images/img-2.jpg" alt="" class="img img-2" />
-                </div>
-
-                <div class="section-1-4">
-                  <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Cũng mua nhà giai đoạn này, vợ chồng chị Vân (sinh năm 1994, quê Thanh Hoá, lập nghiệp tại TP HCM) cho biết chị đã tìm kiếm cơ hội mua nhà từ 3 năm trước. Năm 2021, mới lập gia
-                      đình, vốn tích lũy chưa đủ nhiều nên anh chị chưa mạnh dạn xuống tiền. Bước sang năm 2023, kinh tế khó khăn, lãi suất ngân hàng tăng cao cũng khiến gia đình “chùn” bước.
-                    </p>
-                    <p class="text_content t-content">
-                      Những năm qua, 50% tổng thu nhập hai vợ chồng được đều đặn gửi nhà băng. Đến nay, lãi suất ngân hàng giảm sâu, vợ chồng Vân dự định rút tiền để mua nhà. Hiện, các chủ đầu tư có
-                      nhiều chính sách ưu đãi về tiến độ thanh toán, chính sách cho vay (lãi suất cố định trong thời gian lên tới 15 năm), mang đến cho vợ chồng chị nhiều lựa chọn mua nhà hơn. Cân
-                      nhắc kỹ lưỡng, vợ chồng Vân chốt mua một căn chung cư tại khu đô thị khu Đông Sài Gòn, nơi có hệ sinh thái tiện ích và hạ tầng đồng bộ.
-                    </p>
-                  </div>
-                  <div class="slide-container">
-                    <div class="swiper swiper-1">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-1.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-2.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-3.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-4.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-5.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-1.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-2.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-3.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-4.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="assets/images/slide-5/s-5.jpg" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <img loading="lazy" src="assets/images/slide/slide-1.jpg" alt="" class="img img-3" /> -->
-                  <div class="slide-container-2">
-                    <div class="nav-container">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-pagination"></div>
-                      <div class="swiper-button-next"></div>
-                    </div>
-                    <div class="swiper swiper-2">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-1.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-2.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-3.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-4.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-5.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-6.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-7.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-8.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-9.jpg" alt="" class="img" /></div>
-                        <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-10.jpg" alt="" class="img" /></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                    <p class="text_content t-content">
-                      Theo các chuyên gia, việc sử dụng đòn bẩy tài chính là phương pháp tối ưu giúp người trẻ sớm sở hữu căn nhà đầu tiên, trong bối cảnh nguồn cung ngày càng thiếu hụt khiến các dự
-                      án nhà ở liên tục thiết lập mặt bằng giá mới.
-                    </p>
-                    <p class="text_content t-content">
-                      Dữ liệu của Hội Môi giới Bất động sản Việt Nam (VARS) ghi nhận, chỉ số giá căn hộ tại Hà Nội năm 2023 tăng khoảng 38 điểm phần trăm so với năm 2019. Mức tăng tại thị trường TP
-                      HCM vào khoảng 16 điểm phần trăm. Còn theo Savills, giá nhà sơ cấp trung bình đã tăng trong 20 quý liên tiếp.
-                    </p>
-                    <p class="text_content t-content">
-                      Theo bà Đỗ Thu Hằng, Giám đốc cấp cao, Bộ phận Nghiên cứu và Tư vấn, Savills Hà Nội, phân khúc nhà ở vẫn tiếp tục đà tăng trưởng về giá là do chi phí đất và chi phí xây dựng
-                      tăng, cơ sở hạ tầng phát triển và chất lượng được cải thiện.
-                    </p>
-                    <p class="text_content t-content">
-                      Cán cân cung - cầu lệch pha cũng là lý do thúc đẩy giá nhà. Báo cáo CBRE ghi nhận năm 2023 Hà Nội có thêm tổng cộng gần 10.300 căn hộ chung cư và 2.600 căn nhà ở thấp tầng mở bán
-                      mới, giảm lần lượt 32% và 84% so với năm 2022. TP HCM thậm chí nguồn cung còn khiêm tốn hơn với hơn 8.700 căn hộ chung cư và chỉ gần 30 căn nhà ở thấp tầng mở bán mới, giảm lần
-                      lượt 54% và 98% so với năm 2022.
-                    </p>
-                  </div>
-                  <img loading="lazy" src="assets/images/img-4.png" alt="" class="img img-4" />
-                </div>
-              </div>
-              <div class="section-2">
-                <div class="group_image group_img_3">
-                  <img loading="lazy" class="eff-screen" src="assets/images/group_3_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
-                  <img loading="lazy" src="assets/images/group_3_2.png" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" data-aos-delay="300" alt="" />
-                </div>
-
-                <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                  <p class="text_content t-content">
-                    Tốc độ đô thị hóa ngày càng tăng, sự chuyển dịch của các hộ gia đình thành phố, sự gia tăng không ngừng của lực lượng lao động, sinh viên đổ về thành phố lớn để làm việc và học tập
-                    đã thúc đẩy lực cầu. Trong bối cảnh này, các chủ đầu tư cũng tìm ra nhiều giải pháp tháo gỡ khó khăn về tài chính cho các gia đình trẻ. Đơn cử, chương trình ưu đãi về tiến độ thanh
-                    toán, chính sách cho vay (lãi suất cố định trong thời gian lên tới 15 năm, ân hạn gốc 24 tháng) như Vinhomes tung ra mới đây, cho khách mua căn hộ The Zenpark - Vinhomes Ocean Park
-                    1 (Hà Nội), The Beverly - Vinhomes Grand Park (TP HCM); nhà phố Vinhomes Ocean Park 2.
-                  </p>
-                  <p class="text_content t-content">
-                    Tham gia chương trình này, người mua chuẩn bị khoản vốn tự có tương đương 30% giá trị căn hộ. Phần còn lại, người mua được hỗ trợ vay ngân hàng và trả góp tới 15 năm. Hai năm đầu,
-                    chủ đầu tư đảm bảo lãi suất cố định 6% một năm với khu thấp tầng và 7% một năm với khu cao tầng. Sau hai năm, mức lãi suất được áp dụng theo thị trường nhưng theo hướng có lợi tối
-                    đa cho khách hàng.
-                  </p>
-                  <p class="text_content t-content">
-                    Cụ thể, nếu lãi suất thực tế của ngân hàng thấp hơn mức cố định, người mua sẽ được hưởng đúng mức lãi suất ngân hàng áp dụng. Trong trường hợp lãi suất thực tế của ngân hàng cao
-                    hơn, người mua được đảm bảo chỉ trả lãi với mức trần tối đa 8% một năm với khu thấp tầng hoặc 9,5% một năm với khu cao tầng. Toàn bộ phần chênh lệch lãi suất (nếu có), Vinhomes cho
-                    biết sẽ chi trả cho ngân hàng.
-                  </p>
-                </div>
-
-                <div class="group_image group_img_4">
-                  <img loading="lazy" class="eff-screen" src="assets/images/group_4_1.png" alt="" data-aos="fade-right" ata-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
-                  <img loading="lazy" src="assets/images/group_4_2.png" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1200" alt="" />
-                  <img src="assets/images/group_4_3.png" class="eff-screen" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="1000" />
-                  <img src="assets/images/group_4_4.png" class="eff-screen" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="200" />
-                  <img src="assets/images/group_4_5.png" class="eff-screen" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" alt="" data-aos-delay="700" />
-                  <img src="assets/images/group_4_6.png" class="eff-screen" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="700" />
-                </div>
-
-                <div class="group_text group_text_5" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                  <p class="text_content t-content">
-                    Theo bà Nguyễn Thu Hằng - Tổng giám đốc Công ty cổ phần Vinhomes, việc hiện thực hóa cơ hội sở hữu nhà với chi phí tốt nhất và phương án tài chính an toàn nhất cho khách hàng là
-                    mục tiêu lâu dài của doanh nghiệp. Vì thế, Vinhomes giải bài toán rủi ro cho người mua thông qua việc “bảo hiểm” toàn bộ những biến động phát sinh từ khoản vay ngân hàng trong suốt
-                    15 năm.
-                  </p>
-                  <p class="text_content t-content">
-                    “Hiện chúng tôi đẩy mạnh hợp tác với các tổ chức tín dụng để lan tỏa mô hình này tới hầu hết dự án Vinhomes đang mở bán trên toàn quốc nhằm mở rộng hơn nữa sở hữu nhà cho đông đảo
-                    khách hàng”, đại diện Vinhomes cho biết.
-                  </p>
-                  <p class="text_content t-content">
-                    Không riêng tập khách hàng trẻ có nhu cầu sở hữu căn nhà đầu tiên, loạt chính sách ưu đãi lãi suất này cũng thu hút sự quan tâm của các nhà đầu tư trẻ.
-                  </p>
-                </div>
-
-                <img loading="lazy" src="assets/images/img-5.jpg" alt="" class="img img-5" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" />
-
-                <div class="group_text group_text_6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                  <p class="text_content t-content">
-                    Anh Thanh (sinh năm 1994), giám đốc một công ty truyền thông nhỏ cũng đang cùng bạn mua chung một căn shophouse tại Vinhomes Ocean Park 2 để đầu tư, kinh doanh dài hạn. Từng mua
-                    một căn chung cư tại đại đô thị 1.200 ha này năm 2021, Thanh đánh giá cao chất lượng sống tại dự án, cùng những chính sách đồng hành, hỗ trợ tài chính của chủ đầu tư, ngay cả trong
-                    những giai đoạn tình hình kinh tế chung gặp khó khăn.
-                  </p>
-                  <p class="text_content t-content">
-                    Theo Thanh, mua nhà trả góp không chỉ là cánh cửa giúp anh sớm sở hữu căn nhà mong ước, mà còn giúp anh có động lực phấn đấu, làm việc nhiều hơn. Việc rót vốn vào nhà thấp tầng tại
-                    dự án cũng là cách nhà đầu tư trẻ này đón đầu tiềm năng của một “thành phố” mới bờ Đông sông Hồng…
-                  </p>
-                  <p class="text_content t-content">
-                    Với anh Hùng, việc tự mua nhà trước tuổi 30 là cột mốc “đáng tự hào”. “Tôi chưa từng nghĩ có khả năng mua được nhà sớm ở Hà Nội. Nhưng với chính sách hiện tại, tôi có thể hoàn
-                    thành sớm mục tiêu mua nhà trước ngưỡng 30”, anh Hùng nói.
-                  </p>
-                  <p class="text_content t-content">
-                    Còn với chị Vân, cư dân tương lai dự án The Beverly, Vinhomes Grand Park (TP Thủ Đức), môi trường sống chất lượng cao cùng hệ tiện ích hiện đại tại đây sẽ giúp vợ chồng chị nâng
-                    cao sức khỏe thể chất và tinh thần, giúp anh chị chuyên tâm cho sự nghiệp và tiến tới những mục tiêu cao hơn trong cuộc sống.
-                  </p>
-                </div>
-
-                <img loading="lazy" src="assets/images/img-6.png" alt="" class="img img-6" />
-
-                <div class="author">
-                  <p>Nội dung: <span>Hoài Phong</span> - Thiết kế: <span>Hằng Trịnh </span> - Kỹ thuật: <span>Sơn Bá</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Main Content -->
-
-      <!-- COMMENTS BOX -->
-      <!-- END COMMENTS BOX -->
     </div>
-    <!-- End Document Warpper -->
+    <!-- End Top Nav -->
+    <!-- Menu -->
+    <div class="mask-content"></div>
+    <div id="menu-box" class="menu-box" tabindex="5000">
+      <div class="box_width_common">
+        <div class="block_scoll_menu">
+          <ul class="list_item_panel">
+            <li>
+              <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
+            </li>
+            <li class="active">
+              <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
+            </li>
+            <li>
+              <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
+            </li>
+            <li>
+              <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
+            </li>
+            <li class="end">
+              <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
+            </li>
+          </ul>
+          <div class="coppy_right_left width_common">
+            <i class="ic ic-caret-2-down"></i>
+            <div class="txt_coppy_right">
+              <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
+              <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
+            </div>
+            <div class="txt_lienhe">
+              Hotline: <br />
+              <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
+              <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ascrail2000" class="nicescroll-rails">
+        <div class="vne-hr1"></div>
+      </div>
+      <div id="ascrail2000-hr" class="nicescroll-rails">
+        <div class="vne-hr2"></div>
+      </div>
+    </div>
+    <!-- End Menu -->
+    <!-- Main Content -->
+    <div class="section-content clearfix">
+      <div class="wrapper-content">
+        <div id="overlay"></div>
+        <div class="my_container">
+          <div class="bg-container">
+            <div class="section-1">
+              <div class="section-1-1">
+                <div class="group_image group_img_1">
+                  <img loading="lazy" class="eff-screen" src="assets/images/group_1_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                  <img loading="lazy" src="assets/images/group_1_2.png" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="400" alt="" />
+                  <img src="assets/images/group_1_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="800" />
+                </div>
+                <div class="group_image group_img_2 pc">
+                  <img loading="lazy" class="eff-screen" src="assets/images/group_2_1.png" alt="" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1000" />
+                  <img loading="lazy" src="assets/images/group_2_2.png" data-aos="flip-right" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1300" alt="" />
+                  <img src="assets/images/group_2_3.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="1900" />
+                </div>
+                <img loading="lazy" src="assets/images/img-1.png" alt="" class="img img-1 pc" />
+                <img loading="lazy" src="assets/images/img-1-m.png" alt="" class="img img-1 mobile blen-mode" />
+                <p class="text_title pc" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="300">
+                  Hùng (29 tuổi, quê Ninh Bình), nhà sáng tạo nội dung số,<br />
+                  chốt mua căn hộ studio tại một khu đô thị tại Gia Lâm chỉ<br />
+                  sau vài ngày.
+                </p>
+                <p class="line pc" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">------------------------------------------------------------------------------------</p>
+              </div>
+              <div class="section-1-2 content-container">
+                <div class="group_image group_img_2 mobile">
+                  <img loading="lazy" class="eff-screen" src="assets/images/group_2_1_m.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1000" />
+                  <img loading="lazy" src="assets/images/group_2_2_m.png" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1900" alt="" />
+                  <img src="assets/images/group_2_3_m.png" class="eff-screen" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="1300" />
+                </div>
+                <p class="text_title mobile" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="300">
+                  Hùng (29 tuổi, quê Ninh Bình), nhà sáng tạo nội dung số,<br />
+                  chốt mua căn hộ studio tại một khu đô thị tại Gia Lâm chỉ<br />
+                  sau vài ngày.
+                </p>
+                <p class="line mobile" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">--------------------------------------------</p>
+                <div class="group_text group_text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Anh cho biết ban đầu không có dự định mua nhà, bởi với khoản tiết kiệm hiện có nếu không vay mượn gia đình và người thân, anh khó có thể mua đứt căn hộ.
+                  </p>
+                  <p class="text_content t-content">
+                    Giữa năm ngoái, anh chứng kiến không ít bạn bè mình phải “gồng gánh”, vay mượn trả lãi ngân hàng khi lãi suất thả nổi, có thời điểm đến 12,5%. “Bản tính tự lập, tôi không muốn
+                    vay mượn nên không nghĩ nhiều đến việc mua nhà”, anh Hùng nói.
+                  </p>
+                  <p class="text_content t-content">
+                    Kế hoạch của 9x thay đổi vào đầu năm nay, khi anh biết đến một dự án chung cư tại Hà Nội áp dụng chính sách lãi suất cố định trong thời gian lên tới 15 năm, ân hạn gốc 24 tháng.
+                    Với chính sách này, anh biết được khoản tiền mình phải chi trả hàng tháng, từ đó phân bổ ngân sách để chi trả. Nhìn lại bài toán tài chính cá nhân, với mức vốn tự có 800 triệu
+                    đồng và thu nhập trung bình 50 triệu đồng mỗi tháng, anh đủ khả năng trả khoản tiền lãi và gốc hàng tháng mà không cần vay mượn người nhà.
+                  </p>
+                </div>
+              </div>
+              <div class="section-1-3 content-container" data-aos="flip-up" data-aos-duration="1000" data-aos-offset="300">
+                <img loading="lazy" src="assets/images/img-2.jpg" alt="" class="img img-2 pc" />
+                <img loading="lazy" src="assets/images/img-2-m.jpg" alt="" class="img img-2 mobile" />
+              </div>
 
-    <!-- Core Script -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
-    <script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="assets/js/lib.min.js"></script>
-    <!-- End Core Script -->
+              <div class="section-1-4">
+                <div class="group_text group_text_2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Cũng mua nhà giai đoạn này, vợ chồng chị Vân (sinh năm 1994, quê Thanh Hoá, lập nghiệp tại TP HCM) cho biết chị đã tìm kiếm cơ hội mua nhà từ 3 năm trước. Năm 2021, mới lập gia
+                    đình, vốn tích lũy chưa đủ nhiều nên anh chị chưa mạnh dạn xuống tiền. Bước sang năm 2023, kinh tế khó khăn, lãi suất ngân hàng tăng cao cũng khiến gia đình “chùn” bước.
+                  </p>
+                  <p class="text_content t-content">
+                    Những năm qua, 50% tổng thu nhập hai vợ chồng được đều đặn gửi nhà băng. Đến nay, lãi suất ngân hàng giảm sâu, vợ chồng Vân dự định rút tiền để mua nhà. Hiện, các chủ đầu tư có
+                    nhiều chính sách ưu đãi về tiến độ thanh toán, chính sách cho vay (lãi suất cố định trong thời gian lên tới 15 năm), mang đến cho vợ chồng chị nhiều lựa chọn mua nhà hơn. Cân
+                    nhắc kỹ lưỡng, vợ chồng Vân chốt mua một căn chung cư tại khu đô thị khu Đông Sài Gòn, nơi có hệ sinh thái tiện ích và hạ tầng đồng bộ.
+                  </p>
+                </div>
+                <div class="slide-container">
+                  <div class="swiper swiper-1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-5.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/images/slide-5/s-5.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <script type="text/javascript" src="assets/js/aos.js"></script>
-    <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/js/swiper.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.min.js"></script>
-    <script>
-      AOS.init({ offset: 120, duration: 3000 });
-      document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
-    </script>
-  </body>
+                <!-- <img loading="lazy" src="assets/images/slide/slide-1.jpg" alt="" class="img img-3" /> -->
+                <div class="slide-container-2">
+                  <div class="nav-container">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="swiper swiper-2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-1.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-2.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-3.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-4.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-5.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-6.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-7.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-8.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-9.jpg" alt="" class="img" /></div>
+                      <div class="swiper-slide"><img loading="lazy" src="assets/images/slide/slide-10.jpg" alt="" class="img" /></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_text group_text_3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                  <p class="text_content t-content">
+                    Theo các chuyên gia, việc sử dụng đòn bẩy tài chính là phương pháp tối ưu giúp người trẻ sớm sở hữu căn nhà đầu tiên, trong bối cảnh nguồn cung ngày càng thiếu hụt khiến các dự
+                    án nhà ở liên tục thiết lập mặt bằng giá mới.
+                  </p>
+                  <p class="text_content t-content">
+                    Dữ liệu của Hội Môi giới Bất động sản Việt Nam (VARS) ghi nhận, chỉ số giá căn hộ tại Hà Nội năm 2023 tăng khoảng 38 điểm phần trăm so với năm 2019. Mức tăng tại thị trường TP
+                    HCM vào khoảng 16 điểm phần trăm. Còn theo Savills, giá nhà sơ cấp trung bình đã tăng trong 20 quý liên tiếp.
+                  </p>
+                  <p class="text_content t-content">
+                    Theo bà Đỗ Thu Hằng, Giám đốc cấp cao, Bộ phận Nghiên cứu và Tư vấn, Savills Hà Nội, phân khúc nhà ở vẫn tiếp tục đà tăng trưởng về giá là do chi phí đất và chi phí xây dựng
+                    tăng, cơ sở hạ tầng phát triển và chất lượng được cải thiện.
+                  </p>
+                  <p class="text_content t-content">
+                    Cán cân cung - cầu lệch pha cũng là lý do thúc đẩy giá nhà. Báo cáo CBRE ghi nhận năm 2023 Hà Nội có thêm tổng cộng gần 10.300 căn hộ chung cư và 2.600 căn nhà ở thấp tầng mở bán
+                    mới, giảm lần lượt 32% và 84% so với năm 2022. TP HCM thậm chí nguồn cung còn khiêm tốn hơn với hơn 8.700 căn hộ chung cư và chỉ gần 30 căn nhà ở thấp tầng mở bán mới, giảm lần
+                    lượt 54% và 98% so với năm 2022.
+                  </p>
+                </div>
+                <img loading="lazy" src="assets/images/img-4.png" alt="" class="img img-4" />
+              </div>
+            </div>
+            <div class="section-2">
+              <div class="group_image group_img_3">
+                <img loading="lazy" class="eff-screen" src="assets/images/group_3_1.png" alt="" data-aos="zoom-out" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                <img loading="lazy" src="assets/images/group_3_2.png" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" data-aos-delay="300" alt="" />
+              </div>
+
+              <div class="group_text group_text_4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <p class="text_content t-content">
+                  Tốc độ đô thị hóa ngày càng tăng, sự chuyển dịch của các hộ gia đình thành phố, sự gia tăng không ngừng của lực lượng lao động, sinh viên đổ về thành phố lớn để làm việc và học tập
+                  đã thúc đẩy lực cầu. Trong bối cảnh này, các chủ đầu tư cũng tìm ra nhiều giải pháp tháo gỡ khó khăn về tài chính cho các gia đình trẻ. Đơn cử, chương trình ưu đãi về tiến độ thanh
+                  toán, chính sách cho vay (lãi suất cố định trong thời gian lên tới 15 năm, ân hạn gốc 24 tháng) như Vinhomes tung ra mới đây, cho khách mua căn hộ The Zenpark - Vinhomes Ocean Park
+                  1 (Hà Nội), The Beverly - Vinhomes Grand Park (TP HCM); nhà phố Vinhomes Ocean Park 2.
+                </p>
+                <p class="text_content t-content">
+                  Tham gia chương trình này, người mua chuẩn bị khoản vốn tự có tương đương 30% giá trị căn hộ. Phần còn lại, người mua được hỗ trợ vay ngân hàng và trả góp tới 15 năm. Hai năm đầu,
+                  chủ đầu tư đảm bảo lãi suất cố định 6% một năm với khu thấp tầng và 7% một năm với khu cao tầng. Sau hai năm, mức lãi suất được áp dụng theo thị trường nhưng theo hướng có lợi tối
+                  đa cho khách hàng.
+                </p>
+                <p class="text_content t-content">
+                  Cụ thể, nếu lãi suất thực tế của ngân hàng thấp hơn mức cố định, người mua sẽ được hưởng đúng mức lãi suất ngân hàng áp dụng. Trong trường hợp lãi suất thực tế của ngân hàng cao
+                  hơn, người mua được đảm bảo chỉ trả lãi với mức trần tối đa 8% một năm với khu thấp tầng hoặc 9,5% một năm với khu cao tầng. Toàn bộ phần chênh lệch lãi suất (nếu có), Vinhomes cho
+                  biết sẽ chi trả cho ngân hàng.
+                </p>
+              </div>
+
+              <div class="group_image group_img_4 pc">
+                <img loading="lazy" class="eff-screen" src="assets/images/group_4_1.png" alt="" data-aos="fade-right" ata-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                <img loading="lazy" src="assets/images/group_4_2.png" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="1200" alt="" />
+                <img src="assets/images/group_4_3.png" class="eff-screen" data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="1000" />
+                <img src="assets/images/group_4_4.png" class="eff-screen" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="200" />
+                <img src="assets/images/group_4_5.png" class="eff-screen" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="1000" alt="" data-aos-delay="700" />
+                <img src="assets/images/group_4_6.png" class="eff-screen" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000" alt="" data-aos-delay="700" />
+              </div>
+
+              <img loading="lazy" src="assets/images/mobile-1.jpg" alt="" class="img img-10 my-border" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" />
+              <img loading="lazy" src="assets/images/mobile-2.jpg" alt="" class="img img-11 my-border" data-aos="flip-up" data-aos-duration="1000" data-aos-offset="300" />
+
+              <div class="group_image group_img_4 mobile">
+                <img loading="lazy" class="eff-screen" src="assets/images/group_4_1_m.png" alt="" data-aos="fade-right" ata-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" />
+                <img loading="lazy" src="assets/images/group_4_2_m.png" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="0" alt="" />
+
+              </div>
+
+              <img loading="lazy" src="assets/images/mobile-3.jpg" alt="" class="img img-12 my-border" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300" />
+              <img loading="lazy" src="assets/images/mobile-4.jpg" alt="" class="img img-13 my-border" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" />
+
+
+
+              <div class="group_text group_text_5" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <p class="text_content t-content">
+                  Theo bà Nguyễn Thu Hằng - Tổng giám đốc Công ty cổ phần Vinhomes, việc hiện thực hóa cơ hội sở hữu nhà với chi phí tốt nhất và phương án tài chính an toàn nhất cho khách hàng là
+                  mục tiêu lâu dài của doanh nghiệp. Vì thế, Vinhomes giải bài toán rủi ro cho người mua thông qua việc “bảo hiểm” toàn bộ những biến động phát sinh từ khoản vay ngân hàng trong suốt
+                  15 năm.
+                </p>
+                <p class="text_content t-content">
+                  “Hiện chúng tôi đẩy mạnh hợp tác với các tổ chức tín dụng để lan tỏa mô hình này tới hầu hết dự án Vinhomes đang mở bán trên toàn quốc nhằm mở rộng hơn nữa sở hữu nhà cho đông đảo
+                  khách hàng”, đại diện Vinhomes cho biết.
+                </p>
+                <p class="text_content t-content">
+                  Không riêng tập khách hàng trẻ có nhu cầu sở hữu căn nhà đầu tiên, loạt chính sách ưu đãi lãi suất này cũng thu hút sự quan tâm của các nhà đầu tư trẻ.
+                </p>
+              </div>
+
+              <img loading="lazy" src="assets/images/img-5.jpg" alt="" class="img img-5 pc" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="300" />
+              <img loading="lazy" src="assets/images/img-6-1.png" alt="" class="img img-5 mobile" data-aos="flip-right" data-aos-duration="1000" data-aos-offset="300" />
+
+              <div class="group_text group_text_6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <p class="text_content t-content">
+                  Anh Thanh (sinh năm 1994), giám đốc một công ty truyền thông nhỏ cũng đang cùng bạn mua chung một căn shophouse tại Vinhomes Ocean Park 2 để đầu tư, kinh doanh dài hạn. Từng mua
+                  một căn chung cư tại đại đô thị 1.200 ha này năm 2021, Thanh đánh giá cao chất lượng sống tại dự án, cùng những chính sách đồng hành, hỗ trợ tài chính của chủ đầu tư, ngay cả trong
+                  những giai đoạn tình hình kinh tế chung gặp khó khăn.
+                </p>
+                <p class="text_content t-content">
+                  Theo Thanh, mua nhà trả góp không chỉ là cánh cửa giúp anh sớm sở hữu căn nhà mong ước, mà còn giúp anh có động lực phấn đấu, làm việc nhiều hơn. Việc rót vốn vào nhà thấp tầng tại
+                  dự án cũng là cách nhà đầu tư trẻ này đón đầu tiềm năng của một “thành phố” mới bờ Đông sông Hồng…
+                </p>
+                <p class="text_content t-content">
+                  Với anh Hùng, việc tự mua nhà trước tuổi 30 là cột mốc “đáng tự hào”. “Tôi chưa từng nghĩ có khả năng mua được nhà sớm ở Hà Nội. Nhưng với chính sách hiện tại, tôi có thể hoàn
+                  thành sớm mục tiêu mua nhà trước ngưỡng 30”, anh Hùng nói.
+                </p>
+                <p class="text_content t-content">
+                  Còn với chị Vân, cư dân tương lai dự án The Beverly, Vinhomes Grand Park (TP Thủ Đức), môi trường sống chất lượng cao cùng hệ tiện ích hiện đại tại đây sẽ giúp vợ chồng chị nâng
+                  cao sức khỏe thể chất và tinh thần, giúp anh chị chuyên tâm cho sự nghiệp và tiến tới những mục tiêu cao hơn trong cuộc sống.
+                </p>
+              </div>
+
+              <img loading="lazy" src="assets/images/img-6.png" alt="" class="img img-6" />
+
+              <div class="author pc">
+                <p>Nội dung: <span>Hoài Phong</span> - Thiết kế: <span>Hằng Trịnh </span> - Kỹ thuật: <span>Sơn Bá</span></p>
+              </div>
+              <div class="author mobile">
+                <p>Nội dung: <span>Hoài Phong</span> - Thiết kế: <span>Hằng Trịnh </span> <br> Kỹ thuật: <span>Sơn Bá</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- COMMENTS BOX -->
+    <!-- END COMMENTS BOX -->
+  </div>
+  <!-- End Document Warpper -->
+
+  <!-- Core Script -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
+  <script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib.min.js"></script>
+  <!-- End Core Script -->
+
+  <script type="text/javascript" src="assets/js/aos.js"></script>
+  <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/swiper.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.min.js"></script>
+  <script>
+    AOS.init({ offset: 120, duration: 3000 });
+    document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
+  </script>
+</body>
+
 </html>
